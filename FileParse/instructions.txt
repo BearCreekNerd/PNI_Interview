@@ -1,0 +1,5 @@
+Script 1 - FileParse: Create a script that will
+1. Find csproj files in FileParse project folder and sub folders
+2. Parse the files found in previous step to find refernce nuget packages
+3. Output list of all unique reference packages found in all csproj files to a seperate log file
+4. Download nupkg files from Nuget.Org to a temporary folder for each of the PackageReferences

@@ -1,0 +1,4 @@
+Script 2 - Variable Replacement:
+Create a powershell script that will 
+1. - Load the provided variabes.json file 
+2. - Replace variable tokens in 2nd file xml file making sure the values are escaped properly
