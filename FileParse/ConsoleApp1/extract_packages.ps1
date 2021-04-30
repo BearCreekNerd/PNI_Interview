@@ -1,7 +1,8 @@
 $files = Get-ChildItem -Recurse -Filter *csproj 
-$csproj_content= Get-Content $files | ConvertTo-Xml
 
-$csproj_content.DocumentElement.Attributes.Equals("Value")
-
-#[xml]$xml = Get-Content -Path $files
-#$xml.Project.ItemGroup.PackageReference | Where-Object PackageReference -eq "Newtonsoft.Json"
+foreach ($file in $files){
+    $file | Select-Xml -Xpath /Project/ItemGroup/PackageReference | ForEach-Object {$_.Node.Include}
+    #$csproj_content
+    #$csproj_content.Project.ItemGroup.ProjectReference | ForEach-Object {$_.Node.value}
+   # $csproj_content | Select-Xml -XPath /Project/ItemGroup/ProjectReference | Select-Object -ExpandProperty Node
+}
