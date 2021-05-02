@@ -1,37 +1,38 @@
 $files = Get-ChildItem -Recurse -Filter *csproj 
-$solution_file = Get-ChildItem -Recurse -Filter *sln
 
-$solution_file
+#Get-Content $files
+
+$software_name = $files | Select-Xml -Xpath /Project/ItemGroup/PackageReference | ForEach-Object { $_.Node.Include }
+$software_version = $files | Select-Xml -Xpath /Project/ItemGroup/PackageReference | ForEach-Object { $_.Node.Version }
+
+
+$software_name
+$software_version
 
 $result = @( foreach ($file in $files){
     #$file | Select-Xml -Xpath /Project/ItemGroup/PackageReference | ForEach-Object {$_.Node.Include, $_.Node.version} | Select-Object -Unique | Out-File -FilePath .\log.txt -Append
-    $file | Select-Xml -Xpath /Project/ItemGroup/PackageReference | Select-Object -ExpandProperty Node
+        $file | Select-Xml -Xpath /Project/ItemGroup/PackageReference | Select-Object -ExpandProperty Node
     }
 )
 
+$result
 
-$software_name = $result | ForEach-Object {$_.Include} | Select-Object -Unique
-$software_version = $result | ForEach-Object {$_.Version} | Select-Object -Unique
+$logfile = $result | Out-File .\log.txt
+$logfile
 
-
+Write-Host "---------"
+Write-Host "---------"
+# #Write result to a logfile.
 
 
 $result_list = @{
-    name = $software_name
-    version = $software_version
+   name = $software_name
+   version = $software_version
 }
 
-foreach ($h in $result_list.Values) 
-{
-    #write-host $h.name
-    #write-host $h.version
-   dotnet add package  $h.name.Item --version $h.version --package-directory c:\test_dir2
+foreach ($items in $result_list){
+    Write-Host $items
 }
-
-
-#$software_name
-#$software_version
-
 
 #TODO: Figure out how to take the extracted data and insert into a dotnet package statement
 #dotnet add package $package_list.Include --version $package_list.Version  --package-directory C:\test_dir
