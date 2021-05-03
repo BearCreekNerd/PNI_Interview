@@ -1,0 +1,47 @@
+{
+  "Id": "variableset-Projects-1",
+  "OwnerId": "Projects-1",
+  "Version": 1,
+  "Variables": [
+    {
+      "Name": "retailerID",
+      "Value": "PNI",
+      "Description": null,
+      "Scope": {},
+      "IsEditable": true,
+      "Prompt": null,
+      "Type": "String",
+      "IsSensitive": false
+    },
+    {
+      "Name": "environment",
+      "Value": "qa",
+      "Description": null,
+      "Scope": {},
+      "IsEditable": true,
+      "Prompt": null,
+      "Type": "String",
+      "IsSensitive": false
+    },
+    {
+      "Name": "application",
+      "Value": "helloWorld",
+      "Description": null,
+      "Scope": {},
+      "IsEditable": true,
+      "Prompt": null,
+      "Type": "String",
+      "IsSensitive": false
+    },
+    {
+      "Name": "team",
+      "Value": "Release",
+      "Description": null,
+      "Scope": {},
+      "IsEditable": true,
+      "Prompt": null,
+      "Type": "String",
+      "IsSensitive": false
+    }
+  ]
+}

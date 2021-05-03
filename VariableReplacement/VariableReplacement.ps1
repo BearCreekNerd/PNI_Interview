@@ -1,19 +1,28 @@
-$json_file = Get-Content .\variables.json | ConvertFrom-Json
-
-#$json_file.variables.value
-
-$name_array = @($json_file.variables.Name)
-$value_array = @($json_file.variables.value)
+#Get-Content .\variables.json -Raw | Test-Json
+$json_file = Get-Content -Raw .\variables.json | ConvertFrom-Json 
+$json_objects_hash = @{}
+#$xml_file = Get-Content .\App.config | Select-Xml -XPath /configuration/appSettings/add | ForEach-Object {$_.Node.add.keys}
 
 
-foreach ($items in $name_array){
-    $items.ToString()
-}
+$json_file.variables[2]
 
-foreach ($items in $value_array){
-    $items.ToString()
+
+foreach ($json_objects in $json_file.variables){
+    Write-Host $json_objects
+    #$json_objects_hash.Add($json_file.keys)
 
 }
+
+Write-Host $json_objects_hash
+#Write-Host $xml_file
+
+
+<# $xmlDoc = [XML](Get-Content ".\App_Test.config")
+foreach ($item in  $xmlDoc.configuration.appSettings.add){
+    {$item.value = "Perry is dumb."}
+    {$item.key = "Perry is smart"}
+}
+$xmlDoc.Save("App_Test.config") #>
 
 #TODO
 #load the xml file
