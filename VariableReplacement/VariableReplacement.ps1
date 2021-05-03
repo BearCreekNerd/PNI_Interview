@@ -1,3 +1,7 @@
+#Author: Perry Grewal
+#PNI Interview Question.
+
+
 #Get-Content .\variables.json -Raw | Test-Json
 $json_file = Get-Content -Raw .\variables.json | ConvertFrom-Json 
 $json_objects_hash = @{}
@@ -23,11 +27,5 @@ $xmlDoc = [XML](Get-Content ".\App_Test.config")
     }
 }
 $xmlDoc.Save("App_Test.config")
-
-#TODO
-#load the xml file
-#set set the xml attributes from the extraced values of the JSON file.
-#create a new hashtable with the names as the keys and the values as the values
-#overwrite the value attributes in the xml file with the correct value from i.e."Value": "PNI"
 
 
