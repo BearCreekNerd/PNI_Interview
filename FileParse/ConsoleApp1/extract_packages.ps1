@@ -1,8 +1,8 @@
+#Author: Perry Grewal
+#PNI Interview Test
+
 $files = Get-ChildItem -Recurse -Filter *csproj 
 $packages_hash = @{}
-
-#$software_name = $files | Select-Xml -Xpath /Project/ItemGroup/PackageReference | ForEach-Object { $_.Node.Include }
-#$software_version = $files | Select-Xml -Xpath /Project/ItemGroup/PackageReference | ForEach-Object { $_.Node.Version }
 
 foreach($file in $files){
     $xml_nodes = Select-Xml -Xpath /Project/ItemGroup/PackageReference -Path $file
