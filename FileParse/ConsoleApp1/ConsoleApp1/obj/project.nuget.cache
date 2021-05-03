@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "dgSpecHash": "+OX0J+hdheAiUX+vEo79g6M5FoUOP4Pwh8VRw216fKErN8z7+T0leihvWuN82+QEMl7AkaBou3dvjoI1Ofo6DQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\parvi\\Downloads\\InterviewTest\\FileParse\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\parvi\\.nuget\\packages\\azure.core\\1.13.0\\azure.core.1.13.0.nupkg.sha512",
+    "C:\\Users\\parvi\\.nuget\\packages\\azure.storage.common\\12.8.0-beta.3\\azure.storage.common.12.8.0-beta.3.nupkg.sha512",
+    "C:\\Users\\parvi\\.nuget\\packages\\azure.storage.queues\\12.7.0-beta.3\\azure.storage.queues.12.7.0-beta.3.nupkg.sha512",
+    "C:\\Users\\parvi\\.nuget\\packages\\microsoft.applicationinsights\\2.17.0\\microsoft.applicationinsights.2.17.0.nupkg.sha512",
+    "C:\\Users\\parvi\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.0.0\\microsoft.bcl.asyncinterfaces.1.0.0.nupkg.sha512",
+    "C:\\Users\\parvi\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\parvi\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\parvi\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.0\\system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512",
+    "C:\\Users\\parvi\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\parvi\\.nuget\\packages\\system.memory.data\\1.0.2\\system.memory.data.1.0.2.nupkg.sha512",
+    "C:\\Users\\parvi\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\parvi\\.nuget\\packages\\system.text.encodings.web\\4.7.2\\system.text.encodings.web.4.7.2.nupkg.sha512",
+    "C:\\Users\\parvi\\.nuget\\packages\\system.text.json\\4.6.0\\system.text.json.4.6.0.nupkg.sha512",
+    "C:\\Users\\parvi\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.2\\system.threading.tasks.extensions.4.5.2.nupkg.sha512",
+    "C:\\Users\\parvi\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\parvi\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.11\\microsoft.netcore.app.host.win-x64.3.1.11.nupkg.sha512",
+    "C:\\Users\\parvi\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\parvi\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

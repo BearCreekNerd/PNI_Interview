@@ -3,4 +3,5 @@ Include                       Version
 -------                       -------
 Azure.Storage.Queues          12.7.0-beta.3
 Microsoft.ApplicationInsights 2.17.0
+NewtonSoft.Json               13.0.1
 
